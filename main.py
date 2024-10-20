@@ -1,8 +1,8 @@
-f=open('text.txt','r',encoding='utf-8')
-text=f.readlines()
-f1=open('output.txt','w',encoding='utf-8')
-for line in text:
-    f1.write(line[::-1])
-f.close()
-f1.close()
+f=open('text.txt','r',encoding='utf-8')# открываем первый файл
+text=f.readlines()#считываем информацию с файла по строкам
+f1=open('output.txt','w',encoding='utf-8')#открываем второй файл
+for line in text:#перебираем каждую строку файла f
+    f1.write(line[::-1])#записываем во второй файл каждую строку в обратном порядке
+f.close()#закрываем первый файл
+f1.close()#закрываем второй файл
     
